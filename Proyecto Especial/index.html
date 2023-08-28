@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proyecto Especial</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="text/javascript" src="js/json.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Bienvenido a la mayor comunidad Mustang de Argentina!</h1>
+  </header>
+  <nav class="botonera">
+    <a href="index.html" class="item" id="button1">Home</a>
+    <a href="historia.html" class="item" id="button2">Historia de Mustang</a>
+    <a href="registro.html" class="item" id="button3">Registrarse</a>
+  </nav>
+  <section class="relative">
+    <h2>"...Si le hubiera preguntado a la gente qué querían, habrían dicho caballos más rápidos..."</h2>
+    <p2>Esta frase fue dicha por el Gran Henry Ford, quien si bien no nos dio un caballo mas rapido,
+      si que nos dejo una potente bestia, un caballo de fierro
+      En esta web encontraras todo lo referido a este Magnifico vehiculo, conoceras un poco de sus historia,
+      como asi tambien los diversos modelos que han aparecido a lo largo de los años.
+      A continuacion veremos las caracteristicas que destacaron a cada una de sus generaciones.
+    </p2>
+  </section>
+  <div id="JsArea">
+    <form action="" id="formulario">
+      <div>
+        <label for="Generacion">Generacion:</label>
+        <input id="generacion" type="text" name="generacion" required/>
+      </div>
+      <div>
+        <label for="Caracteristicas">Caracteristicas:</label>
+        <textarea name="caracteristicas" id="caracteristicas" cols="15" rows="10" required></textarea> 
+      </div>
+      <div>
+        <label for="Motorizacion">Motorizacion:</label>
+        <input id="motor" type="text" name="motor" required/>
+      </div>
+      <div>
+        <label for="Anio">Anio:</label>
+        <input id="anio" type="number" name="anio" required/>
+      </div>
+      <input type="submit" value="Agregar">
+    </form>
+    <div class="dualBtnJs">
+      <button id="addVarios">Agregar Varios</button>
+      <button id="clearJson">Limpiar</button>
+    </div>
+    <div class=tabla>
+      <table>
+        <thead>
+          <tr>
+            <th>Generacion</th>
+            <th>Caracteristicas</th>
+            <th>Motorizacion</th>
+            <th>Año</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <form id="formu" style="display: none;">
+      <div>
+        <label for="Generacion">Generacion:</label>
+        <input id="generacion" type="text" name="generacion" required/>
+      </div>
+      <div>
+        <label for="Caracteristicas">Caracteristicas:</label>
+        <textarea name="caracteristicas" id="caracteristicas" cols="15" rows="10" required></textarea> 
+      </div>
+      <div>
+        <label for="Motorizacion">Motorizacion:</label>
+        <input id="motor" type="text" name="motor" required/>
+      </div>
+      <div>
+        <label for="Anio">Anio:</label>
+        <input id="anio" type="number" name="anio" required/>
+      </div>
+      <input type="submit" value="Actualizar">
+    </form>
+  </div>
+  <footer>Todos los Derechos Reservados de Ford Motor Company&trade; (1964-2019)</footer>
+</body>
+
+</html>

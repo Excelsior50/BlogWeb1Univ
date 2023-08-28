@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <title>Registrate</title>
+    <script type="text/javascript" src="js/validarcampo.js"></script>
+</head>
+<body>
+    <nav class="botonera">
+        <a href="index.html" class="item" id="button1">Home</a>
+        <a href="historia.html" class="item" id="button2">Historia de Mustang</a>
+        <a href="registro.html" class="item" id="button3">Registrarse</a>
+    </nav>
+    <header>
+        <h2>Suscribiendote al boletin mensual de noticias, recibiras en tu correo toda la informacion mas actualizada de estos apasionantes autos!</h2>
+    </header>
+    <form id="record" action=historia.html type=POST> <!-- Pongo id al formulario para evitar el envio  -->
+        <div class="grupo">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" required/>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" type="text" name="apellido" required/>
+            </div>
+            <div>
+                <label for="nacimiento">Nacimiento:</label>
+                <input id="dia" type="date" required/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" required/>
+            </div>
+            <div>
+                <label for="pais">Pais:</label>
+                <input id="pais" type="text" name="pais" required/>
+            </div>
+            <div>
+                <label for="ciudad">Ciudad:</label>
+                <input id="ciudad" type="text" name="ciudad" required/>
+            </div>
+        </div>
+        <div>
+            <textarea name="comentarios" rows="10" cols="40">Dejanos tus comentarios!</textarea>
+        </div>   
+        <div class="capt">
+            <p3 type="text" id="Captcha"></p3>
+            <p><input type="button" id="refresh"/></p>            
+            <input type="text" id="txtInput" value="" required/>    
+        </div>
+        <input type="submit" valvue="Submit">
+        <p id= "alerta"></p>
+    </form>
+    <footer>Todos los Derechos Reservados de Ford Motor Company&trade; (1964-2019)</footer>
+</body>
+</html>
